@@ -16,17 +16,7 @@ int ReadYear() {
 
 bool isLeapYear() {
 	int Year = ReadYear();
-	if (Year % 400 == 0)
-		return true;
-
-	else if (Year % 100 == 0)
-		return false;
-
-	else if (Year % 4 == 0)
-		return true;
-
-	else
-		return false;
+	return (Year % 400 == 0 || (Year % 4  == 0 && Year % 100 !=0));
 }
 
 int main() {
