@@ -1,10 +1,14 @@
+/*
+ * Program: Year Time Calculator
+ * Calculates days, hours, minutes, and seconds in a given year (accounts for leap years).
+ */
 #include<iostream>
 using namespace std;
 
 
 
 short ReadYear() {
-	int Year;
+	short Year;
 	cout << "Please Enter The Year To Check\n";
 	cin >> Year;
 	return Year;
